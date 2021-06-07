@@ -11,10 +11,11 @@ class Show extends Component
 
     public function mount(Product $productSlug){
         $this->product = $productSlug;
+        // return redirect('/show');
     }
     
     public function render()
     {
-        return view('livewire.product.show');
+        return view('home');
     }
 }
